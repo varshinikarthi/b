@@ -1,0 +1,144 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birthday Surprise</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+text-align:center;
+background:linear-gradient(120deg,#ff9a9e,#fad0c4);
+color:white;
+overflow-x:hidden;
+}
+
+/* intro */
+
+#intro{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+
+/* main section */
+
+#main{
+display:none;
+}
+
+/* buttons */
+
+button{
+padding:12px 25px;
+border:none;
+border-radius:25px;
+background:#ff4081;
+color:white;
+font-size:16px;
+cursor:pointer;
+margin:10px;
+}
+
+/* typing message */
+
+#message{
+font-size:26px;
+margin:20px;
+min-height:40px;
+}
+
+/* gallery */
+
+.gallery img{
+width:200px;
+border-radius:15px;
+margin:10px;
+}
+
+/* secret messages */
+
+.secret{
+display:none;
+font-size:20px;
+margin:15px;
+}
+
+/* balloons */
+
+.balloon{
+position:absolute;
+bottom:-100px;
+width:40px;
+height:60px;
+border-radius:50%;
+animation:float 6s infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0)}
+100%{transform:translateY(-120vh)}
+}
+
+/* cake */
+
+#cake{
+font-size:90px;
+cursor:pointer;
+margin-top:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Intro Screen -->
+
+<div id="intro">
+
+<h1>🎁 I Have a Surprise For You</h1>
+
+<button onclick="startSurprise()">Open Your Gift</button>
+
+</div>
+
+
+<!-- Main Birthday Page -->
+
+<div id="main">
+
+<h1>🎉 Happy Birthday 🎉</h1>
+
+<div id="message"></div>
+
+<h2>📸 Our Memories</h2>
+
+<div class="gallery">
+
+<img src="https://picsum.photos/200?1">
+<img src="https://picsum.photos/200?2">
+<img src="https://picsum.photos/200?3">
+
+</div>
+
+<h2>💌 Secret Messages</h2>
+
+<button onclick="showMsg(1)">Open Message 1</button>
+<button onclick="showMsg(2)">Open Message 2</button>
+<button onclick="showMsg(3)">Final Surprise</button>
+
+<div id="msg1" class="secret">✨ You make life brighter!</div>
+<div id="msg2" class="secret">💖 I hope this year brings you happiness.</div>
+<div id="msg3" class="secret">🎂 Today is your special day. Enjoy every moment!</div>
+
+
+<h2>🎂 Cut the Birthday Cake</h2>
+
+<div id="cake" oncl
+```
